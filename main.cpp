@@ -13,7 +13,7 @@ int main() {
 
     //テスト用範囲定義
     int start   = 1;
-    int end     = 1000;
+    int end     = 100000;
 
     //処理時間計測
     clock_t start_clock = clock();
@@ -25,7 +25,7 @@ int main() {
 
     double processTime = (double)end_clock - start_clock;
 
-    printf("処理時間(ミリ秒): %f", processTime);
+    printf("処理時間(CPUサイクル時間): %f", processTime);
 
     return 0;
 }
